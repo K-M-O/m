@@ -10,7 +10,8 @@ exports.admin = async(req,res,next)=>{
             const userData = await User.find({token: token}).exec()
             if ( userData[0].isAdmin == false) return res.redirect('/')
             next()   
-        } catch{
+        } catch(err){
+            console.log('err1');
             res.redirect('/')
         }
     }
@@ -19,7 +20,7 @@ exports.admin = async(req,res,next)=>{
 exports.noAuth = (req,res,next) => {
     if (req.cookies){
         const token = req.cookies.token
-        if ( token != null) return res.cookie('error','err-0100'),res.redirect('/')
+        if ( token != null) return console.log('err2'),res.redirect('/')
         next()
     }
 }

@@ -71,8 +71,8 @@ function add(){
         alert('You have to select a keyword first')
     }
 }
-var socket = io()
 if (window.location.search !== ''){
+    var socket = io()
     document.title = `MDA | Loading`
     document.querySelectorAll('.noResults')[0].style.display = 'none'
     document.querySelectorAll('.results')[0].style.display = 'grid'
