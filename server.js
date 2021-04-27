@@ -26,9 +26,6 @@ module.exports = io
 // server routes.
 
 io.on('connection',sockets.quer)
-io.on('connection', (socket)=>{
-    socket.emit('result','yes')
-})
 
 const adminRoute = require('./routes/adminRo')
 const authRoute = require('./routes/authRo')
