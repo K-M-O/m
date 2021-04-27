@@ -1,0 +1,29 @@
+{
+  "name": "mea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bull": "^3.18.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.5",
+    "nodemon": "^2.0.4",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "host": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "MostafaElbolok",
+  "license": "ISC"
+}
